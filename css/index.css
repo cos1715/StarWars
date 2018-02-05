@@ -1,0 +1,48 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-attachment: fixed;
+    /*background-repeat: repeat-x;*/
+    background-image: url('../image/back1.jpg');
+    color: white;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+
+hr {
+    margin-bottom: 50px;
+}
+
+img {
+    cursor: pointer;
+}
+
+#prequel,
+#original,
+#sequel,
+#story {
+    display: flex;
+    justify-content: space-around;
+}
+
+#original {
+    margin-top: 50px;
+}
+
+#sequel {
+    margin-top: 50px;
+}
+
+#story {
+    margin-top: 50px;
+}
+
+#footer {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+#up {
+    cursor: pointer;
+}

@@ -1,0 +1,70 @@
+h1 {
+    width: 100%;
+    border: 2px solid yellow;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#p1,
+#p2 {
+    display: inline-block;
+    border: 2px solid yellow;
+    max-width: 550px;
+    font-size: 1em;
+    padding: 25px 15px;
+
+}
+
+#sectionOne,
+#sectionTwo,
+#trailer1,
+#foo {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    
+}
+
+img{
+    max-height: 400px;
+}
+
+#trailer1,
+#foo {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+
+#foo {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#close {
+    cursor: pointer;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
