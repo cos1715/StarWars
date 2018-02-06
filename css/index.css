@@ -2,12 +2,14 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     background-attachment: fixed;
-    /*background-repeat: repeat-x;*/
     background-image: url('../image/back1.jpg');
     color: white;
     font-family: 'Rubik Mono One', sans-serif;
 }
 
+#header img {
+    max-width: 100%;
+}
 
 hr {
     margin-bottom: 50px;
@@ -45,4 +47,81 @@ img {
 
 #up {
     cursor: pointer;
+}
+
+
+
+#menu1 {
+    resize: none;
+    float: left;
+    width: 25%;
+    max-height: 90px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border: 2px solid yellow;
+}
+
+#menu2 {
+    resize: none;
+    float: left;
+    width: 25%;
+    max-height: 90px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border: 2px solid yellow;
+}
+
+#menu3 {
+    resize: none;
+    float: left;
+    width: 24%;
+    max-height: 90px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border: 2px solid yellow;
+}
+
+#menu4 {
+    resize: none;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border: 2px solid yellow;
+    max-height: 90px;
+}
+
+#pl {
+    background-image: url('../image/hr/pt.jpg');
+    background-repeat: no-repeat;
+    max-width: 100%;
+    padding: 20px 0 10px 0;
+    margin-top: 50px;
+}
+
+#ol {
+    background-image: url('../image/hr/ot.jpg');
+    background-repeat: no-repeat;
+    max-width: 100%;
+    padding: 20px 0 10px 0;
+    margin-top: 50px;
+}
+
+#sl {
+    background-image: url('../image/hr/st.jpg');
+    background-repeat: no-repeat;
+    max-width: 100%;
+    padding: 20px 0 10px 0;
+    margin-top: 50px;
+}
+
+#stl {
+    background-image: url('../image/hr/sws.jpg');
+    background-repeat: no-repeat;
+    max-width: 100%;
+    padding: 20px 0 10px 0;
+    margin-top: 50px;
 }
