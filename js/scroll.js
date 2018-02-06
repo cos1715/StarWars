@@ -15,4 +15,4 @@ $(document).ready(function() {
         let scrollTime = (height - curPos) / 1.73;
         $("body,html").animate({ "scrollTop": height }, scrollTime);
     });
-});
+});// JavaScript File
