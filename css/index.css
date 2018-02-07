@@ -157,6 +157,13 @@ img {
         border: 2px solid yellow;
         max-height: 80px;
     }
+    #prequel img,
+    #original img,
+    #sequel img,
+    #story img {
+        max-height: 260px;
+        margin-bottom: 20px;
+    }
 }
 
 
