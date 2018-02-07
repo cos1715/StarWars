@@ -21,11 +21,12 @@ h1 {
 #foo {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-bottom: 30px;
-    
+
 }
 
-img{
+img {
     max-height: 400px;
 }
 
@@ -44,4 +45,18 @@ img{
 
 #close {
     cursor: pointer;
+}
+
+@media screen and (max-width:550px) {
+    #p1,
+    #p2 {
+        max-width: 100%;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    #sectionOne {
+        margin-bottom: 0;
+    }
 }
