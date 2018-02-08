@@ -50,8 +50,6 @@ img {
     cursor: pointer;
 }
 
-
-
 #menu1 {
     resize: none;
     float: left;
@@ -60,7 +58,9 @@ img {
     text-decoration: none;
     color: white;
     text-align: center;
-    border: 2px solid yellow;
+    border-right: 2px solid yellow;
+    padding-top: 2px;
+
 }
 
 #menu2 {
@@ -71,7 +71,8 @@ img {
     text-decoration: none;
     color: white;
     text-align: center;
-    border: 2px solid yellow;
+    border-right: 2px solid yellow;
+    padding-top: 2px;
 }
 
 #menu3 {
@@ -82,7 +83,8 @@ img {
     text-decoration: none;
     color: white;
     text-align: center;
-    border: 2px solid yellow;
+    border-right: 2px solid yellow;
+    padding-top: 2px;
 }
 
 #menu4 {
@@ -91,72 +93,27 @@ img {
     text-decoration: none;
     color: white;
     text-align: center;
-    border: 2px solid yellow;
     max-height: 90px;
+    border: 2px solid yellow;
 }
 
 @media screen and (max-width:920px) {
-    #menu1,
-    #menu2,
-    #menu3,
-    #menu4 {
-        font-size: 0.9em;
+    .m {
+        /*font-size: 0.9em;*/
+        padding-bottom: 20px;
     }
 }
 
-@media screen and (max-width:800px) {
-    #menu1,
-    #menu2,
-    #menu3,
-    #menu4 {
-        font-size: 0.7em;
-    }
-}
-
-@media screen and (max-width:670px) {
-    #menu1 {
-        resize: none;
-        float: left;
-        width: 50%;
-        max-height: 80px;
-        text-decoration: none;
-        color: white;
-        text-align: center;
-        border: 2px solid yellow;
+@media screen and (max-width:675px) {
+    .m {
+        padding: 0;
     }
 
-    #menu2 {
+    .m img {
+        display: none;
         resize: none;
-        float: left;
-        width: 48.5%;
-        text-decoration: none;
-        color: white;
-        text-align: center;
-        border: 2px solid yellow;
-        max-height: 80px;
     }
 
-    #menu3 {
-        resize: none;
-        float: left;
-        width: 50%;
-        max-height: 80px;
-        text-decoration: none;
-        color: white;
-        text-align: center;
-        border: 2px solid yellow;
-    }
-
-    #menu4 {
-        resize: none;
-        float: left;
-        width: 48.5%;
-        text-decoration: none;
-        color: white;
-        text-align: center;
-        border: 2px solid yellow;
-        max-height: 80px;
-    }
     #prequel img,
     #original img,
     #sequel img,
@@ -167,53 +124,21 @@ img {
 }
 
 
-@media screen and (max-width:540px) {
-    #menu1 {
-        resize: none;
-        display: block;
-        width: 100%;
-        max-height: 30px;
-        text-decoration: none;
-        color: white;
-        text-align: center;
-        border: 2px solid yellow;
-    }
-
-    #menu2 {
-        resize: none;
-        display: block;
-        width: 100%;
-        text-decoration: none;
-        color: white;
-        text-align: center;
-        border: 2px solid yellow;
-        max-height: 30px;
-    }
-
-    #menu3 {
-        resize: none;
-        display: block;
-        width: 100%;
-        max-height: 30px;
-        text-decoration: none;
-        color: white;
-        text-align: center;
-        border: 2px solid yellow;
-    }
-
-    #menu4 {
-        resize: none;
-        display: block;
-        width: 100%;
-        ;
-        text-decoration: none;
-        color: white;
-        text-align: center;
-        border: 2px solid yellow;
-        max-height: 30px;
+@media screen and (max-width:510px) {
+    .m p {
+        display: none;
     }
 
     .m img {
+        display: inline;
+    }
+}
+
+@media screen and (max-width:225px) {
+    .m {
+        display: none;
+    }
+    #menu4 {
         display: none;
     }
 }
