@@ -5,10 +5,10 @@ body {
     background-image: url('../image/back1.jpg');
     color: rgb(200, 200, 0);
     font-family: 'Rubik Mono One', sans-serif;
-    animation: Gradient 240s ease infinite;
+    /* animation: space-fly 240s ease infinite; */
 }
 
-@keyframes Gradient {
+@keyframes space-fly {
     0% {
         background-position: 0% 100%
     }
@@ -90,7 +90,6 @@ hr {
         display: none;
     }
     .episode-title-img {
-        max-height: 260px;
         margin-bottom: 20px;
     }
 }

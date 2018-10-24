@@ -14,6 +14,17 @@
     margin-bottom: 30px;
 }
 
+.desc,
+.episode-img {
+    max-width: 500px;
+    margin: 10px;
+    padding: 25px 15px;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: all 1s ease;
+}
+
 .left {
     transform: perspective(200px) rotateX(10deg) rotateY(-5deg);
 }
@@ -22,15 +33,12 @@
     transform: perspective(200px) rotateX(10deg) rotateY(5deg);
 }
 
-.desc,
-.episode-img {
-    width: 500px;
-    max-width: 550px;
-    margin: 10px;
-    padding: 25px 15px;
-    border: 2px solid yellow;
-    border-radius: 10px;
-    font-size: 1em;
+.left:hover {
+    transform: perspective(200px) ;
+}
+
+.right:hover {
+    transform: perspective(200px) ;
 }
 
 .trailer,
@@ -39,6 +47,42 @@
     justify-content: center;
     width: 100%;
     margin-bottom: 30px;
+}
+
+@media screen and (max-width:1340px) {
+    .left {
+        margin: 25px;
+        transform: perspective(200px) rotateX(5deg);
+    }
+    .right {
+        margin: 25px;
+        transform: perspective(200px) rotateX(5deg);
+    }
+}
+
+@media screen and (max-width:1110px) {
+    .left {
+        transform: perspective(200px) rotateX(5deg) rotateY(0deg);
+    }
+    .right {
+        transform: perspective(200px) rotateX(5deg) rotateY(0deg);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .left {
+        margin: 5px 0;
+        width: 300px;
+        transform: perspective(200px);
+    }
+    .right {
+        margin: 5px 0;
+        width: 300px;
+        transform: perspective(200px);
+    }
+    .trailer iframe {
+        width: 100%;
+    }
 }
 
 .trailer iframe {
