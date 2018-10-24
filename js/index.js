@@ -1,208 +1,56 @@
-//episode1
-document.getElementById('ep1')
-    .addEventListener('click', getServerDataEp1)
+; (function () {
+    const $ep = Array.from(document.getElementsByClassName('a'));
+    const $desc = Array.from(document.getElementsByClassName('opacity-one'));
 
-function getServerDataEp1() {
-    const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            document.getElementById('pt').innerHTML = xhr.responseText;
-            //додати селектор і лісенер
-            document.getElementById('close1')
-                .addEventListener('click', closeServerDataPt)
+    const $epOne = document.getElementById('ep1');
+    const $epOneDesc = document.getElementById('ep1-desc');
+    const $epTwo = document.getElementById('ep2');
+    const $epTwoDesc = document.getElementById('ep2-desc');
+    const $epThree = document.getElementById('ep3');
+    const $epThreeDesc = document.getElementById('ep3-desc');
+
+    const $epFour = document.getElementById('ep4');
+    const $epFourDesc = document.getElementById('ep4-desc');
+    const $epFive = document.getElementById('ep5');
+    const $epFiveDesc = document.getElementById('ep5-desc');
+    const $epSix = document.getElementById('ep6');
+    const $epSixDesc = document.getElementById('ep6-desc');
+
+    const $epSeven = document.getElementById('ep7');
+    const $epSevenDesc = document.getElementById('ep7-desc');
+    const $epEight = document.getElementById('ep8');
+    const $epEightDesc = document.getElementById('ep8-desc');
+
+    const $stsRo = document.getElementById('stsRo');
+    const $stsRoDesc = document.getElementById('stsRo-desc');
+
+    $desc.forEach(element => {
+        element.classList.add('opacity-zero');
+    });
+
+    function hide(el1, el2) {
+        if (!el1.checked) {
+            el2.classList.add('hide');
+        }
+        else {
+            $ep.forEach(el => {
+                el.checked = false;
+            });
+            el1.checked = true;
+            el2.classList.remove('hide');
         }
     }
-    xhr.open('GET', 'episode1.html', true);
-    xhr.send();
-}
 
-//episode2
-document.getElementById('ep2')
-    .addEventListener('click', getServerDataEp2)
+    $epOneDesc.addEventListener('animationend', () => hide($epOne, $epOneDesc));
+    $epTwoDesc.addEventListener('animationend', () => hide($epTwo, $epTwoDesc));
+    $epThreeDesc.addEventListener('animationend', () => hide($epThree, $epThreeDesc));
 
-function getServerDataEp2() {
-    const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            document.getElementById('pt').innerHTML = xhr.responseText;
-            //додати селектор і лісенер
-            document.getElementById('close1')
-                .addEventListener('click', closeServerDataPt)
-        }
-    }
-    xhr.open('GET', 'episode2.html', true);
-    xhr.send();
-}
+    $epFourDesc.addEventListener('animationend', () => hide($epFour, $epFourDesc));
+    $epFiveDesc.addEventListener('animationend', () => hide($epFive, $epFiveDesc));
+    $epSixDesc.addEventListener('animationend', () => hide($epSix, $epSixDesc));
 
-//episode3
-document.getElementById('ep3')
-    .addEventListener('click', getServerDataEp3)
-
-function getServerDataEp3() {
-    const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            document.getElementById('pt').innerHTML = xhr.responseText;
-            //додати селектор і лісенер
-            document.getElementById('close1')
-                .addEventListener('click', closeServerDataPt)
-        }
-    }
-    xhr.open('GET', 'episode3.html', true);
-    xhr.send();
-}
-
-//prequel close
-function closeServerDataPt () {
-     const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            document.getElementById('pt').innerHTML = xhr.responseText;
-        }
-    }
-    xhr.open('GET', 'e.html', true);
-    xhr.send();
-}
-
-
-//episode4
-document.getElementById('ep4')
-    .addEventListener('click', getServerDataEp4)
-
-function getServerDataEp4() {
-    const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            document.getElementById('ot').innerHTML = xhr.responseText;
-            //додати селектор і лісенер
-            document.getElementById('close2')
-                .addEventListener('click', closeServerDataOt)
-        }
-    }
-    xhr.open('GET', 'episode4.html', true);
-    xhr.send();
-}
-
-//episode5
-document.getElementById('ep5')
-    .addEventListener('click', getServerDataEp5)
-
-function getServerDataEp5() {
-    const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            document.getElementById('ot').innerHTML = xhr.responseText;
-            //додати селектор і лісенер
-            document.getElementById('close2')
-                .addEventListener('click', closeServerDataOt)
-        }
-    }
-    xhr.open('GET', 'episode5.html', true);
-    xhr.send();
-}
-
-//episode6
-document.getElementById('ep6')
-    .addEventListener('click', getServerDataEp6)
-
-function getServerDataEp6() {
-    const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            document.getElementById('ot').innerHTML = xhr.responseText;
-            //додати селектор і лісенер
-            document.getElementById('close2')
-                .addEventListener('click', closeServerDataOt)
-        }
-    }
-    xhr.open('GET', 'episode6.html', true);
-    xhr.send();
-}
-
-function closeServerDataOt() {
-    const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            document.getElementById('ot').innerHTML = xhr.responseText;
-        }
-    }
-    xhr.open('GET', 'e.html', true);
-    xhr.send();
-}
-
-//episode7
-document.getElementById('ep7')
-    .addEventListener('click', getServerDataEp7)
-
-function getServerDataEp7() {
-    const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            document.getElementById('st').innerHTML = xhr.responseText;
-            //додати селектор і лісенер
-            document.getElementById('close3')
-                .addEventListener('click', closeServerDataSt)
-        }
-    }
-    xhr.open('GET', 'episode7.html', true);
-    xhr.send();
-}
-
-//episode8
-document.getElementById('ep8')
-    .addEventListener('click', getServerDataEp8)
-
-function getServerDataEp8() {
-    const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            document.getElementById('st').innerHTML = xhr.responseText;
-            //додати селектор і лісенер
-            document.getElementById('close3')
-                .addEventListener('click', closeServerDataSt)
-        }
-    }
-    xhr.open('GET', 'episode8.html', true);
-    xhr.send();
-}
-
-function closeServerDataSt() {
-    const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            document.getElementById('st').innerHTML = xhr.responseText;
-        }
-    }
-    xhr.open('GET', 'e.html', true);
-    xhr.send();
-}
-
-//story
-document.getElementById('ro')
-    .addEventListener('click', getServerDataStory)
-
-function getServerDataStory() {
-    const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            document.getElementById('rogue').innerHTML = xhr.responseText;
-            //додати селектор і лісенер
-            document.getElementById('close4')
-                .addEventListener('click', closeServerDataStory)
-        }
-    }
-    xhr.open('GET', 'rogueOne.html', true);
-    xhr.send();
-}
-
-
-function closeServerDataStory() {
-    const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            document.getElementById('rogue').innerHTML = xhr.responseText;
-        }
-    }
-    xhr.open('GET', 'e.html', true);
-    xhr.send();
-}
+    $epSevenDesc.addEventListener('animationend', () => hide($epSeven, $epSevenDesc));
+    $epEightDesc.addEventListener('animationend', () => hide($epEight, $epEightDesc));
+    
+    $stsRoDesc.addEventListener('animationend', () => hide($stsRo, $stsRoDesc));
+})();

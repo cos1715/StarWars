@@ -1,73 +1,149 @@
-h1 {
-    width: 100%;
-    border: 2px solid yellow;
+.episode-header {
     margin-top: 50px;
+    padding: 10px;
+    border: 2px solid yellow;
+    border-radius: 10px;
     text-align: center;
 }
 
-#p1,
-#p2 {
-    display: inline-block;
-    border: 2px solid yellow;
-    max-width: 550px;
-    font-size: 1em;
-    padding: 25px 15px;
-
-}
-
-#sectionOne,
-#sectionTwo,
-#trailer1,
-#foo {
+.episode-desc {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     margin-bottom: 30px;
-
 }
 
-#img1, #img2 {
-    max-height: 400px;
+.left {
+    transform: perspective(200px) rotateX(10deg) rotateY(-5deg);
 }
 
-#trailer1,
-#foo {
+.right {
+    transform: perspective(200px) rotateX(10deg) rotateY(5deg);
+}
+
+.desc,
+.episode-img {
+    width: 500px;
+    max-width: 550px;
+    margin: 10px;
+    padding: 25px 15px;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+.trailer,
+.desc-end {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    width: 100%;
     margin-bottom: 30px;
 }
 
-
-#foo {
-    margin-top: 100px;
-    margin-bottom: 100px;
+.trailer iframe {
+    margin-top: 50px;
+    border: 2px solid yellow;
+    border-radius: 10px;
 }
 
 .hide {
-    cursor: pointer;
+    display: none;
 }
 
-@media screen and (max-width:550px) {
-    #p1,
-    #p2 {
-        max-width: 100%;
-        margin: 0;
-    }
+#ep1:checked~#ep1-desc.opacity-one {
+    display: block;
+    animation-name: opacity-to-one;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
 
-    #img1, #img2 {
-        max-width: 100%;
-    }
-    #sectionOne,
-    #sectionTwo {
-        margin: 0;
+#ep2:checked~#ep2-desc.opacity-one {
+    display: block;
+    animation-name: opacity-to-one;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
 
+#ep3:checked~#ep3-desc.opacity-one {
+    display: block;
+    animation-name: opacity-to-one;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+#ep4:checked~#ep4-desc.opacity-one {
+    display: block;
+    animation-name: opacity-to-one;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+#ep5:checked~#ep5-desc.opacity-one {
+    display: block;
+    animation-name: opacity-to-one;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+#ep6:checked~#ep6-desc.opacity-one {
+    display: block;
+    animation-name: opacity-to-one;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+#ep7:checked~#ep7-desc.opacity-one {
+    display: block;
+    animation-name: opacity-to-one;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+#ep8:checked~#ep8-desc.opacity-one {
+    display: block;
+    animation-name: opacity-to-one;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+#stsRo:checked~#stsRo-desc.opacity-one {
+    display: block;
+    animation-name: opacity-to-one;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+.opacity-zero {
+    animation-name: opacity-to-zero;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes opacity-to-zero {
+    from {
+        opacity: 1;
     }
-    #p1{
-        border-bottom: 0;
-        padding-bottom: 0;
+    to {
+        opacity: 0;
     }
-    #p2 {
-        border-top: 0;
-        padding-top: 0;
+}
+
+@keyframes opacity-to-one {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
