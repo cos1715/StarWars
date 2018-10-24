@@ -5,7 +5,7 @@ body {
     background-image: url('../image/back1.jpg');
     color: rgb(200, 200, 0);
     font-family: 'Rubik Mono One', sans-serif;
-    /* animation: space-fly 240s ease infinite; */
+    animation: space-fly 240s ease infinite;
 }
 
 @keyframes space-fly {
