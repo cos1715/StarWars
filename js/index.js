@@ -9,20 +9,20 @@
     const $epThree = document.getElementById('ep3');
     const $epThreeDesc = document.getElementById('ep3-desc');
 
-    // const $epFour = document.getElementById('ep4');
-    // const $epFourDesc = document.getElementById('ep4-desc');
-    // const $epFive = document.getElementById('ep5');
-    // const $epFiveDesc = document.getElementById('ep5-desc');
-    // const $epSix = document.getElementById('ep6');
-    // const $epSixDesc = document.getElementById('ep6-desc');
+    const $epFour = document.getElementById('ep4');
+    const $epFourDesc = document.getElementById('ep4-desc');
+    const $epFive = document.getElementById('ep5');
+    const $epFiveDesc = document.getElementById('ep5-desc');
+    const $epSix = document.getElementById('ep6');
+    const $epSixDesc = document.getElementById('ep6-desc');
 
-    // const $epSeven = document.getElementById('ep7');
-    // const $epSevenDesc = document.getElementById('ep7-desc');
-    // const $epEight = document.getElementById('ep8');
-    // const $epEightDesc = document.getElementById('ep8-desc');
+    const $epSeven = document.getElementById('ep7');
+    const $epSevenDesc = document.getElementById('ep7-desc');
+    const $epEight = document.getElementById('ep8');
+    const $epEightDesc = document.getElementById('ep8-desc');
 
-    // const $stsRo = document.getElementById('stsRo');
-    // const $stsRoDesc = document.getElementById('stsRo-desc');
+    const $stsRo = document.getElementById('stsRo');
+    const $stsRoDesc = document.getElementById('stsRo-desc');
 
     $desc.forEach(element => {
         element.classList.add('opacity-zero');
@@ -45,12 +45,12 @@
     $epTwoDesc.addEventListener('animationend', () => hide($epTwo, $epTwoDesc));
     $epThreeDesc.addEventListener('animationend', () => hide($epThree, $epThreeDesc));
 
-    // $epFourDesc.addEventListener('animationend', () => hide($epFour, $epFourDesc));
-    // $epFiveDesc.addEventListener('animationend', () => hide($epFive, $epFiveDesc));
-    // $epSixDesc.addEventListener('animationend', () => hide($epSix, $epSixDesc));
+    $epFourDesc.addEventListener('animationend', () => hide($epFour, $epFourDesc));
+    $epFiveDesc.addEventListener('animationend', () => hide($epFive, $epFiveDesc));
+    $epSixDesc.addEventListener('animationend', () => hide($epSix, $epSixDesc));
 
-    // $epSevenDesc.addEventListener('animationend', () => hide($epSeven, $epSevenDesc));
-    // $epEightDesc.addEventListener('animationend', () => hide($epEight, $epEightDesc));
-    
-    // $stsRoDesc.addEventListener('animationend', () => hide($stsRo, $stsRoDesc));
+    $epSevenDesc.addEventListener('animationend', () => hide($epSeven, $epSevenDesc));
+    $epEightDesc.addEventListener('animationend', () => hide($epEight, $epEightDesc));
+
+    $stsRoDesc.addEventListener('animationend', () => hide($stsRo, $stsRoDesc));
 })();
