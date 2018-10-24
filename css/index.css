@@ -2,47 +2,95 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     background-attachment: fixed;
-    /*background-repeat: repeat-x;*/
     background-image: url('../image/back1.jpg');
-    color: white;
+    color: rgb(200, 200, 0);
     font-family: 'Rubik Mono One', sans-serif;
+    animation: Gradient 240s ease infinite;
 }
 
+@keyframes Gradient {
+    0% {
+        background-position: 0% 100%
+    }
+    25% {
+        background-position: 100% 50%
+    }
+    50% {
+        background-position: 0% 250%
+    }
+    75% {
+        background-position: 50% 75%
+    }
+    100% {
+        background-position: 0% 100%
+    }
+}
+
+.app-header img {
+    max-width: 100%;
+}
 
 hr {
+    border: 1px solid yellow;
     margin-bottom: 50px;
 }
 
-img {
+.episode-title-img {
+    margin: 10px;
     cursor: pointer;
 }
 
-#prequel,
-#original,
-#sequel,
-#story {
+.episode-title-img {
+    border-radius: 10px;
+}
+
+.trilogy-title {
+    margin-top: 100px;
+}
+
+.film-titles {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-#original {
-    margin-top: 50px;
-}
-
-#sequel {
-    margin-top: 50px;
-}
-
-#story {
-    margin-top: 50px;
-}
-
-#footer {
+.app-footer {
     margin-top: 200px;
     display: flex;
     justify-content: center;
 }
 
-#up {
-    cursor: pointer;
+.header-nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu {
+    resize: none;
+    width: 25%;
+    max-height: 90px;
+    text-decoration: none;
+    color: yellow;
+    text-align: center;
+    border: 2px solid yellow;
+    padding-top: 2px;
+}
+
+@media screen and (max-width:920px) {
+    .menu {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:675px) {
+    .menu {
+        padding: 0;
+    }
+    .menu-text {
+        display: none;
+    }
+    .episode-title-img {
+        max-height: 260px;
+        margin-bottom: 20px;
+    }
 }
